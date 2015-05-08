@@ -6,6 +6,7 @@
       foreach($pol_arr as $pol) :
     ?>
      <div class="item" style="background-image: url('<?php echo $pol['img']; ?>')">
+       <h2><?php echo $pol['navn']; ?></h2>
       <h1><?php echo $pol['citat']; ?></h1>
       <div class="social">
       	<p>
