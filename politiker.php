@@ -16,7 +16,7 @@ $pol_arr = [
     2 => [
       'img' => '/assets/img/billede03.jpg',
       'citat' => 'Lidt af det hele!',
-      'navn' => 'Morten Østergaard'
+      'navn' => 'Morten Østergaard',
       'twitter' => 'twittermorten'
     ]
   ];
