@@ -3,3 +3,9 @@ body {
   background: #FFF;
   color: #000;
 }
+
+/* line 9, ../sass/main.scss */
+.citat {
+  width: 100%;
+  text-align: center;
+}

@@ -17,3 +17,7 @@
     <![endif]-->
   </head>
   <body>
+
+    <?php
+      include('politiker.php');
+    ?>
