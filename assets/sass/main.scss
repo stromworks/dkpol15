@@ -11,16 +11,24 @@ html, body, section, div.owl-carousel, div.item {
 div.item {
 	background-size: cover;
 	background-position: center center;
+	h2 {
+		margin: 25% 0 0 5%;
+		font-family: serif;
+		font-size: 3em;
+		font-style: normal;
+		color: $dark;
+		border-bottom: 15px solid $light;
 	h1 {
-		margin: 25% 15% 5% 5%;
+		margin: 0 0 0 5%;
+		font-family: serif;
 		font-size: 4em;
 		font-style: bold;
 		color: $dark;
 		border-bottom: 15px solid $dark;
 	}
 	div.social p span {
-		margin: 0 0 5% 5%;
-		font-size: 4em;
+		margin: 10% 0 0 5%;
+		font-size: 1.4em;
 		font-style: bold;
 		color: $light;
   }
