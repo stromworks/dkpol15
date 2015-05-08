@@ -5,7 +5,7 @@
     <?php
       foreach($pol_arr as $pol) :
     ?>
-     <div class="item" style="background-image: url('<?php echo $pol['img']; ?>'">
+     <div class="item" style="background-image: url('<?php echo $pol['img']; ?>')">
       <h1><?php echo $pol['citat']; ?></h1>
       <div class="social">
       	<p>
