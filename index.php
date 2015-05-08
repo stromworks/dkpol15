@@ -4,7 +4,9 @@ include('header.php');
 
 <section>
   <div class="owl-carousel">
-    <div class="item"></div>
+    <div class="item">
+      
+    </div>
   </div>
 </section>
 
