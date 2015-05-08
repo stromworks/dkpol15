@@ -1,11 +1,26 @@
 /* line 4, C:/wamp/www/dkpol15/assets/sass/main.scss */
-body {
-  background: #FFF;
-  color: #000; }
+html, body, section, div.owl-carousel, div.item {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0; }
 
-/* line 9, C:/wamp/www/dkpol15/assets/sass/main.scss */
-.citat {
-  width: 100%;
-  text-align: center; }
+/* line 11, C:/wamp/www/dkpol15/assets/sass/main.scss */
+div.item {
+  background-size: cover;
+  background-position: center center; }
+  /* line 14, C:/wamp/www/dkpol15/assets/sass/main.scss */
+  div.item h1 {
+    margin: 25% 15% 5% 5%;
+    font-size: 4em;
+    font-style: bold;
+    color: #000;
+    border-bottom: 15px solid #000; }
+  /* line 21, C:/wamp/www/dkpol15/assets/sass/main.scss */
+  div.item div.social p span {
+    margin: 0 0 5% 5%;
+    font-size: 4em;
+    font-style: bold;
+    color: #FFF; }
 
 /*# sourceMappingURL=main.css.map */
