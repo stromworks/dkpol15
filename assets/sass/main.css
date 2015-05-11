@@ -1,26 +1,103 @@
 /* line 4, C:/wamp/www/dkpol15/assets/sass/main.scss */
-html, body, section, div.owl-carousel, div.item {
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 10, C:/wamp/www/dkpol15/assets/sass/main.scss */
+html, body {
   width: 100vw;
   height: 100vh;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
 
-/* line 11, C:/wamp/www/dkpol15/assets/sass/main.scss */
-div.item {
-  background-size: cover;
-  background-position: center center; }
-  /* line 14, C:/wamp/www/dkpol15/assets/sass/main.scss */
-  div.item h1 {
-    margin: 25% 15% 5% 5%;
-    font-size: 4em;
-    font-style: bold;
-    color: #000;
-    border-bottom: 15px solid #000; }
-  /* line 21, C:/wamp/www/dkpol15/assets/sass/main.scss */
-  div.item div.social p span {
-    margin: 0 0 5% 5%;
-    font-size: 4em;
-    font-style: bold;
-    color: #FFF; }
+/* line 18, C:/wamp/www/dkpol15/assets/sass/main.scss */
+section {
+  width: calc( 100vw - 300px);
+  height: 100vh;
+  display: table;
+  float: left; }
+  /* line 23, C:/wamp/www/dkpol15/assets/sass/main.scss */
+  section div.inner {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative; }
+    /* line 27, C:/wamp/www/dkpol15/assets/sass/main.scss */
+    section div.inner .owl-carousel {
+      max-width: 500px;
+      margin: 0 auto;
+      z-index: 0; }
+    /* line 32, C:/wamp/www/dkpol15/assets/sass/main.scss */
+    section div.inner h1 {
+      position: absolute;
+      z-index: 99;
+      bottom: 150px;
+      right: 200px;
+      transform: rotate(-5deg);
+      font-family: serif;
+      font-size: 4em;
+      font-style: bold;
+      color: #000; }
+      /* line 42, C:/wamp/www/dkpol15/assets/sass/main.scss */
+      section div.inner h1 span {
+        border-bottom: 10px solid #000; }
+    /* line 46, C:/wamp/www/dkpol15/assets/sass/main.scss */
+    section div.inner h2 {
+      position: absolute;
+      z-index: 99;
+      bottom: 250px;
+      right: 200px;
+      transform: rotate(-5deg);
+      font-family: serif;
+      font-size: 2.6em;
+      font-style: bold;
+      color: #000; }
 
+/* line 60, C:/wamp/www/dkpol15/assets/sass/main.scss */
+aside {
+  float: left;
+  width: 300px;
+  height: calc( 100vh - 50px); }
+  /* line 64, C:/wamp/www/dkpol15/assets/sass/main.scss */
+  aside div.inner {
+    margin: 25px 25px 25px 0;
+    padding: 0 0 0 25px;
+    height: 100%;
+    border-left: 1px solid #000; }
+    /* line 69, C:/wamp/www/dkpol15/assets/sass/main.scss */
+    aside div.inner h1 {
+      margin: 0; }
+
+/*div.item {
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	padding-top: 15%;
+	h2 {
+		margin: 0 0 5px 25px;
+		font-family: serif;
+		font-size: 2em;
+		font-style: normal;
+		color: $light;
+	}
+	h1 {
+		margin: 0 0 75px 25px;
+		font-family: serif;
+		font-size: 4em;
+		font-style: bold;
+		color: $light;
+		span {
+			border-bottom: 10px solid $light;
+		}
+	}
+	div.social p {
+		margin: 0 0 0 25px;
+		span {
+			font-size: 1.4em;
+			font-style: bold;
+			color: $light;
+	  	}
+	}
+}*/
 /*# sourceMappingURL=main.css.map */

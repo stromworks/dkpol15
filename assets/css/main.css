@@ -6,7 +6,7 @@
 }
 
 /* line 10, ../sass/main.scss */
-html, body, section, div.owl-carousel, div.item {
+html, body {
   width: 100vw;
   height: 100vh;
   padding: 0;
@@ -15,39 +15,99 @@ html, body, section, div.owl-carousel, div.item {
 }
 
 /* line 18, ../sass/main.scss */
-div.item {
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  padding-top: 15%;
+section {
+  width: calc( 100vw - 300px );
+  height: 100vh;
+  display: table;
+  float: left;
 }
 /* line 23, ../sass/main.scss */
-div.item h2 {
-  margin: 0 0 5px 25px;
-  font-family: serif;
-  font-size: 2em;
-  font-style: normal;
-  color: #FFF;
+section div.inner {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
 }
-/* line 30, ../sass/main.scss */
-div.item h1 {
-  margin: 0 0 75px 25px;
+/* line 27, ../sass/main.scss */
+section div.inner .owl-carousel {
+  max-width: 500px;
+  margin: 0 auto;
+  z-index: 0;
+}
+/* line 32, ../sass/main.scss */
+section div.inner h1 {
+  position: absolute;
+  z-index: 99;
+  bottom: 150px;
+  right: 200px;
+  transform: rotate(-5deg);
   font-family: serif;
   font-size: 4em;
   font-style: bold;
-  color: #FFF;
-}
-/* line 36, ../sass/main.scss */
-div.item h1 span {
-  border-bottom: 10px solid #FFF;
-}
-/* line 40, ../sass/main.scss */
-div.item div.social p {
-  margin: 0 0 0 25px;
+  color: #000;
 }
 /* line 42, ../sass/main.scss */
-div.item div.social p span {
-  font-size: 1.4em;
-  font-style: bold;
-  color: #FFF;
+section div.inner h1 span {
+  border-bottom: 10px solid #000;
 }
+/* line 46, ../sass/main.scss */
+section div.inner h2 {
+  position: absolute;
+  z-index: 99;
+  bottom: 250px;
+  right: 200px;
+  transform: rotate(-5deg);
+  font-family: serif;
+  font-size: 2.6em;
+  font-style: bold;
+  color: #000;
+}
+
+/* line 60, ../sass/main.scss */
+aside {
+  float: left;
+  width: 300px;
+  height: calc( 100vh - 50px );
+}
+/* line 64, ../sass/main.scss */
+aside div.inner {
+  margin: 25px 25px 25px 0;
+  padding: 0 0 0 25px;
+  height: 100%;
+  border-left: 1px solid #000;
+}
+/* line 69, ../sass/main.scss */
+aside div.inner h1 {
+  margin: 0;
+}
+
+/*div.item {
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	padding-top: 15%;
+	h2 {
+		margin: 0 0 5px 25px;
+		font-family: serif;
+		font-size: 2em;
+		font-style: normal;
+		color: $light;
+	}
+	h1 {
+		margin: 0 0 75px 25px;
+		font-family: serif;
+		font-size: 4em;
+		font-style: bold;
+		color: $light;
+		span {
+			border-bottom: 10px solid $light;
+		}
+	}
+	div.social p {
+		margin: 0 0 0 25px;
+		span {
+			font-size: 1.4em;
+			font-style: bold;
+			color: $light;
+	  	}
+	}
+}*/
