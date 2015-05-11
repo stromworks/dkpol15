@@ -10,7 +10,7 @@
       <h1><?php echo $pol['citat']; ?></h1>
       <div class="social">
       	<p>
-      		<img src="/assets/img/twitter.svg">
+      		<img src="/assets/img/twitter.svg" height="30">
       		<span>
       			<?php echo $pol['twitter']; ?>
       		</span>
