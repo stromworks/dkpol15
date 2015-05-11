@@ -1,28 +1,53 @@
 /* line 4, ../sass/main.scss */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 10, ../sass/main.scss */
 html, body, section, div.owl-carousel, div.item {
   width: 100vw;
   height: 100vh;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
-/* line 11, ../sass/main.scss */
+/* line 18, ../sass/main.scss */
 div.item {
   background-size: cover;
   background-position: center center;
+  position: relative;
+  padding-top: 15%;
 }
-/* line 14, ../sass/main.scss */
+/* line 23, ../sass/main.scss */
+div.item h2 {
+  margin: 0 0 5px 25px;
+  font-family: serif;
+  font-size: 2em;
+  font-style: normal;
+  color: #FFF;
+}
+/* line 30, ../sass/main.scss */
 div.item h1 {
-  margin: 25% 15% 5% 5%;
+  margin: 0 0 75px 25px;
+  font-family: serif;
   font-size: 4em;
   font-style: bold;
-  color: #000;
-  border-bottom: 15px solid #000;
+  color: #FFF;
 }
-/* line 21, ../sass/main.scss */
+/* line 36, ../sass/main.scss */
+div.item h1 span {
+  border-bottom: 10px solid #FFF;
+}
+/* line 40, ../sass/main.scss */
+div.item div.social p {
+  margin: 0 0 0 25px;
+}
+/* line 42, ../sass/main.scss */
 div.item div.social p span {
-  margin: 0 0 5% 5%;
-  font-size: 4em;
+  font-size: 1.4em;
   font-style: bold;
   color: #FFF;
 }

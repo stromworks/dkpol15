@@ -1,35 +1,48 @@
 $light: #FFF;
 $dark: #000;
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 html, body, section, div.owl-carousel, div.item {
 	width: 100vw;
 	height: 100vh;
 	padding: 0;
 	margin: 0;
+	overflow: hidden;
 }
 
 div.item {
 	background-size: cover;
 	background-position: center center;
+	position: relative;
+	padding-top: 15%;
 	h2 {
-		margin: 25% 0 0 5%;
+		margin: 0 0 5px 25px;
 		font-family: serif;
-		font-size: 3em;
+		font-size: 2em;
 		font-style: normal;
-		color: $dark;
-		border-bottom: 15px solid $light;
+		color: $light;
+	}
 	h1 {
-		margin: 0 0 0 5%;
+		margin: 0 0 75px 25px;
 		font-family: serif;
 		font-size: 4em;
 		font-style: bold;
-		color: $dark;
-		border-bottom: 15px solid $dark;
-	}
-	div.social p span {
-		margin: 10% 0 0 5%;
-		font-size: 1.4em;
-		font-style: bold;
 		color: $light;
-  }
+		span {
+			border-bottom: 10px solid $light;
+		}
+	}
+	div.social p {
+		margin: 0 0 0 25px;
+		span {
+			font-size: 1.4em;
+			font-style: bold;
+			color: $light;
+	  	}
+	}
 }

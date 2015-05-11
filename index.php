@@ -5,14 +5,14 @@
     <?php
       foreach($pol_arr as $pol) :
     ?>
-     <div class="item" style="background-image: url('<?php echo $pol['img']; ?>')">
-       <h2><?php echo $pol['navn']; ?></h2>
-      <h1><?php echo $pol['citat']; ?></h1>
+     <div class="item group" style="background-image: url('<?php echo $pol['img']; ?>')">
+      <h2><?php echo $pol['navn']; ?></h2>
+      <h1><span><?php echo $pol['citat']; ?></span></h1>
       <div class="social">
       	<p>
-      		<img src="/assets/img/twitter.svg">
+      		<!--<img src="/assets/img/twitter.svg">-->
       		<span>
-      			<?php echo $pol['twitter']; ?>
+      			@<?php echo $pol['twitter']; ?>
       		</span>
       	</p>
       </div>
