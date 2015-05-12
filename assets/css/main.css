@@ -11,103 +11,109 @@ html, body {
   height: 100vh;
   padding: 0;
   margin: 0;
-  overflow: hidden;
 }
 
-/* line 18, ../sass/main.scss */
-section {
+/* line 17, ../sass/main.scss */
+section aside {
   width: calc( 100vw - 300px );
   height: 100vh;
   display: table;
   float: left;
 }
-/* line 23, ../sass/main.scss */
-section div.inner {
+/* line 22, ../sass/main.scss */
+section aside div.inner {
   display: table-cell;
   vertical-align: middle;
   position: relative;
 }
-/* line 27, ../sass/main.scss */
-section div.inner .owl-carousel {
+/* line 26, ../sass/main.scss */
+section aside div.inner .group {
   max-width: 500px;
   margin: 0 auto;
-  z-index: 0;
 }
-/* line 32, ../sass/main.scss */
-section div.inner h1 {
-  position: absolute;
-  z-index: 99;
-  bottom: 150px;
-  right: 200px;
-  transform: rotate(-5deg);
-  font-family: serif;
-  font-size: 4em;
-  font-style: bold;
-  color: #000;
+/* line 29, ../sass/main.scss */
+section aside div.inner .group .item {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
-/* line 42, ../sass/main.scss */
-section div.inner h1 span {
-  border-bottom: 10px solid #000;
-}
-/* line 46, ../sass/main.scss */
-section div.inner h2 {
-  position: absolute;
-  z-index: 99;
-  bottom: 250px;
-  right: 200px;
-  transform: rotate(-5deg);
-  font-family: serif;
-  font-size: 2.6em;
-  font-style: bold;
-  color: #000;
+/* line 33, ../sass/main.scss */
+section aside div.inner .group .item img {
+  width: 100%;
+  display: block;
 }
 
-/* line 60, ../sass/main.scss */
-aside {
+/* line 42, ../sass/main.scss */
+section article {
   float: left;
   width: 300px;
   height: calc( 100vh - 50px );
 }
-/* line 64, ../sass/main.scss */
-aside div.inner {
+/* line 46, ../sass/main.scss */
+section article div.inner {
   margin: 25px 25px 25px 0;
   padding: 0 0 0 25px;
   height: 100%;
   border-left: 1px solid #000;
 }
-/* line 69, ../sass/main.scss */
-aside div.inner h1 {
+/* line 51, ../sass/main.scss */
+section article div.inner h1 {
   margin: 0;
 }
 
-/*div.item {
-	background-size: cover;
-	background-position: center center;
-	position: relative;
-	padding-top: 15%;
-	h2 {
-		margin: 0 0 5px 25px;
-		font-family: serif;
-		font-size: 2em;
-		font-style: normal;
-		color: $light;
-	}
-	h1 {
-		margin: 0 0 75px 25px;
-		font-family: serif;
-		font-size: 4em;
-		font-style: bold;
-		color: $light;
-		span {
-			border-bottom: 10px solid $light;
+/*section {
+	width: calc( 100vw - 300px );
+	height: 100vh;
+	display: table;
+	float: left;
+	div.inner {
+		display: table-cell;
+		vertical-align: middle;
+		position: relative;
+		.owl-carousel {
+			max-width: 500px;
+			margin: 0 auto;
+			z-index: 0;
+		}
+		h1 {
+			position: absolute;
+			z-index: 99;
+			bottom: 150px;
+			right: 200px;
+			transform:rotate(-5deg);
+			font-family: serif;
+			font-size: 4em;
+			font-style: bold;
+			color: $dark;
+			span {
+				border-bottom: 10px solid $dark;
+			}
+		}
+		h2 {
+			position: absolute;
+			z-index: 99;
+			bottom: 250px;
+			right: 200px;
+			transform:rotate(-5deg);
+			font-family: serif;
+			font-size: 2.6em;
+			font-style: bold;
+			color: $dark;
 		}
 	}
-	div.social p {
-		margin: 0 0 0 25px;
-		span {
-			font-size: 1.4em;
-			font-style: bold;
-			color: $light;
-	  	}
+}
+
+aside {
+	float: left;
+	width: 300px;
+	height: calc( 100vh - 50px );
+	div.inner {
+		margin: 25px 25px 25px 0;
+		padding: 0 0 0 25px;
+		height: 100%;
+		border-left: 1px solid #000;
+		h1 {
+			margin: 0;
+		}
 	}
 }*/
