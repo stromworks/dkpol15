@@ -11,7 +11,7 @@ $pol_arr = [
 	],
 	'2' => [
 		'first' => 'Kristian',
-		'last' => 'Thuelsen dahl'
+		'last' => 'Thuelsen Dahl'
 	],
 	'3' => [
 		'first' => 'Anders',
@@ -135,14 +135,57 @@ $pol_arr = [
 	]
 ];
 
-$pol_citat = array(
-	'Mere service',
-	'Mindre bureaukrati',
-	'Flere arbejdspladser',
-	'Markedet er ved at vende',
-	'Pas på miljøet før det er for sent',
-	'Danmark er et af de tryggeste samfund i verden'
-);
+$pol_citat = [
+	'0' => [
+			'0' => 'skabe vækst',
+			'1' => 'passe på de ældre',
+			'2' => 'tage hånd om de svage',
+			'3' => 'sikre et godt arbejdsmarked',
+			'4' => 'have verdens bedste uddannelses',
+			'5' => 'sænke kriminaliteten, alle skal være trygge',
+			'6' => 'passe på klimaet',
+			'7' => 'lave effektive reformer'
+	],
+	'1' => [
+			'0' => 'et grundlæggende sikkerhedsnet',
+			'1' => 'et moderne og effektivt sundhedsvæsen',
+			'2' => 'et velfærdssamfund',
+			'3' => 'flere arbejdspladser',
+			'4' => 'et bedre miljø uden at miste konkurrence evne',
+			'5' => 'fri forskning og lige adgang til uddannelse',
+			'6' => 'ordenlige vilkår på arbejdsmarkedet',
+			'7' => 'en god uddannelsesektor',
+			'8' => 'effektive reformer',
+			'9' => 'en effektiv og service orienteret offentlig sektor',
+	],
+	'2' => [
+			'0' => 'den globale konkurrence',
+			'1' => 'at vores børn kan vokse op i en tryg verden',
+			'2' => 'at naturen og miljøet ikke lider overlast',
+			'3' => 'vores uafhængighed af olie og gas',
+			'4' => 'de svageste i vores samfund',
+			'5' => 'vi kan yde en ordentlig hjælp',
+			'6' => 'bedre betingelser for de studerende',
+			'7' => 'et værdigt liv for vores seniorer',
+			'8' => 'en verden med mindre forurening',
+			'9' => 'grundlæggende friheder som ytringsfrihed og trosfrihed',
+			'10' => 'sundhedfaglig kvalitet på internationalt niveau'
+	]
+];
+
+$pol_color = [
+	'0' => '#b30015',
+	'1' => '#003974',
+	'2' => '#EC008C',
+	'3' => '#0e4d3d',
+	'4' => '#b6c932',
+	'5' => '#c00418',
+	'6' => '#12213f',
+	'7' => '#004177',
+	'8' => '#d61a44',
+	'9' => '#0092d5',
+	'10' => '#ec6501'
+];
 
 $replace = array('.',' ','æ','ø','å','Ø');
 $with = array('','','ae','oe','aa','oe');

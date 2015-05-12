@@ -1,5 +1,8 @@
 $light: #FFF;
+$light-trans: rgba(255,255,255,.75);
 $dark: #000;
+$color: blue;
+$color-alt: red;
 
 .group:after {
   content: "";
@@ -12,21 +15,44 @@ html, body {
 	height: 100vh;
 	padding: 0;
 	margin: 0;
+	font-family: sans-serif;
+}
+body {
+	//background-image: url('../img/lamppost4.jpg');
+	//background-size: cover;
+	//background-position: center center;
 }
 
-section aside {
-	width: calc( 100vw - 300px );
+section article {
+	width: 100vw;
 	height: 100vh;
 	display: table;
-	float: left;
 	div.inner {
 		display: table-cell;
 		vertical-align: middle;
 		position: relative;
-		.group {
+		div.group {
+			//box-shadow: 2px 2px 12px $dark;
 			max-width: 500px;
 			margin: 0 auto;
-			.item {
+			position: relative;
+			h1 {
+				margin: 0;
+				padding: 25px 100px 0px 10px;
+				border-top: 5px solid $dark;
+				background-color: #ccc;
+				font-size: 2em;
+				font-weight: bold;
+				color: $dark;
+			}
+			h2 {
+				padding: 10px 50px 25px 10px;
+				margin: 0;
+				background-color: #ccc;
+				font-size: 1em;
+				color: $dark;
+			}
+			div.item {
 				width: 100%;
 				margin: 0;
 				padding: 0;
@@ -36,76 +62,24 @@ section aside {
 				}
 			}
 		}
-	}
-}
-
-section article {
-	float: left;
-	width: 300px;
-	height: calc( 100vh - 50px );
-	div.inner {
-		margin: 25px 25px 25px 0;
-		padding: 0 0 0 25px;
-		height: 100%;
-		border-left: 1px solid #000;
-		h1 {
-			margin: 0;
-		}
-	}
-}
-/*section {
-	width: calc( 100vw - 300px );
-	height: 100vh;
-	display: table;
-	float: left;
-	div.inner {
-		display: table-cell;
-		vertical-align: middle;
-		position: relative;
-		.owl-carousel {
-			max-width: 500px;
-			margin: 0 auto;
-			z-index: 0;
-		}
-		h1 {
-			position: absolute;
-			z-index: 99;
-			bottom: 150px;
-			right: 200px;
-			transform:rotate(-5deg);
-			font-family: serif;
-			font-size: 4em;
-			font-style: bold;
-			color: $dark;
+		p.action {
+			text-align: center;
+			margin-top: 50px;
 			span {
-				border-bottom: 10px solid $dark;
+				font-weight: bold;
+			}
+			a {
+				display: inline-block;
+				padding: 8px 18px;
+				margin-left: 10px;
+				background-color: $color;
+				color: $light;
+				text-decoration: none;
+				border-radius: 5px;
+			}
+			a:hover {
+				background-color: $color-alt;
 			}
 		}
-		h2 {
-			position: absolute;
-			z-index: 99;
-			bottom: 250px;
-			right: 200px;
-			transform:rotate(-5deg);
-			font-family: serif;
-			font-size: 2.6em;
-			font-style: bold;
-			color: $dark;
-		}
 	}
 }
-
-aside {
-	float: left;
-	width: 300px;
-	height: calc( 100vh - 50px );
-	div.inner {
-		margin: 25px 25px 25px 0;
-		padding: 0 0 0 25px;
-		height: 100%;
-		border-left: 1px solid #000;
-		h1 {
-			margin: 0;
-		}
-	}
-}*/

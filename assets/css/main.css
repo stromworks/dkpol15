@@ -1,119 +1,86 @@
-/* line 4, ../sass/main.scss */
+/* line 7, ../sass/main.scss */
 .group:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 10, ../sass/main.scss */
+/* line 13, ../sass/main.scss */
 html, body {
   width: 100vw;
   height: 100vh;
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
 
-/* line 17, ../sass/main.scss */
-section aside {
-  width: calc( 100vw - 300px );
+/* line 26, ../sass/main.scss */
+section article {
+  width: 100vw;
   height: 100vh;
   display: table;
-  float: left;
 }
-/* line 22, ../sass/main.scss */
-section aside div.inner {
+/* line 30, ../sass/main.scss */
+section article div.inner {
   display: table-cell;
   vertical-align: middle;
   position: relative;
 }
-/* line 26, ../sass/main.scss */
-section aside div.inner .group {
+/* line 34, ../sass/main.scss */
+section article div.inner div.group {
   max-width: 500px;
   margin: 0 auto;
+  position: relative;
 }
-/* line 29, ../sass/main.scss */
-section aside div.inner .group .item {
+/* line 39, ../sass/main.scss */
+section article div.inner div.group h1 {
+  margin: 0;
+  padding: 25px 100px 0px 10px;
+  border-top: 5px solid #000;
+  background-color: #ccc;
+  font-size: 2em;
+  font-weight: bold;
+  color: #000;
+}
+/* line 48, ../sass/main.scss */
+section article div.inner div.group h2 {
+  padding: 10px 50px 25px 10px;
+  margin: 0;
+  background-color: #ccc;
+  font-size: 1em;
+  color: #000;
+}
+/* line 55, ../sass/main.scss */
+section article div.inner div.group div.item {
   width: 100%;
   margin: 0;
   padding: 0;
 }
-/* line 33, ../sass/main.scss */
-section aside div.inner .group .item img {
+/* line 59, ../sass/main.scss */
+section article div.inner div.group div.item img {
   width: 100%;
   display: block;
 }
-
-/* line 42, ../sass/main.scss */
-section article {
-  float: left;
-  width: 300px;
-  height: calc( 100vh - 50px );
+/* line 65, ../sass/main.scss */
+section article div.inner p.action {
+  text-align: center;
+  margin-top: 50px;
 }
-/* line 46, ../sass/main.scss */
-section article div.inner {
-  margin: 25px 25px 25px 0;
-  padding: 0 0 0 25px;
-  height: 100%;
-  border-left: 1px solid #000;
+/* line 68, ../sass/main.scss */
+section article div.inner p.action span {
+  font-weight: bold;
 }
-/* line 51, ../sass/main.scss */
-section article div.inner h1 {
-  margin: 0;
+/* line 71, ../sass/main.scss */
+section article div.inner p.action a {
+  display: inline-block;
+  padding: 8px 18px;
+  margin-left: 10px;
+  background-color: blue;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 5px;
 }
-
-/*section {
-	width: calc( 100vw - 300px );
-	height: 100vh;
-	display: table;
-	float: left;
-	div.inner {
-		display: table-cell;
-		vertical-align: middle;
-		position: relative;
-		.owl-carousel {
-			max-width: 500px;
-			margin: 0 auto;
-			z-index: 0;
-		}
-		h1 {
-			position: absolute;
-			z-index: 99;
-			bottom: 150px;
-			right: 200px;
-			transform:rotate(-5deg);
-			font-family: serif;
-			font-size: 4em;
-			font-style: bold;
-			color: $dark;
-			span {
-				border-bottom: 10px solid $dark;
-			}
-		}
-		h2 {
-			position: absolute;
-			z-index: 99;
-			bottom: 250px;
-			right: 200px;
-			transform:rotate(-5deg);
-			font-family: serif;
-			font-size: 2.6em;
-			font-style: bold;
-			color: $dark;
-		}
-	}
+/* line 80, ../sass/main.scss */
+section article div.inner p.action a:hover {
+  background-color: red;
 }
-
-aside {
-	float: left;
-	width: 300px;
-	height: calc( 100vh - 50px );
-	div.inner {
-		margin: 25px 25px 25px 0;
-		padding: 0 0 0 25px;
-		height: 100%;
-		border-left: 1px solid #000;
-		h1 {
-			margin: 0;
-		}
-	}
-}*/
