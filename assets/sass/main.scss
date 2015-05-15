@@ -1,6 +1,6 @@
-$light: #FFF;
+$light: #f5f5f5;
 $light-trans: rgba(255,255,255,.75);
-$dark: #000;
+$dark: #141213;
 $color: blue;
 $color-alt: red;
 
@@ -15,12 +15,28 @@ html, body {
 	height: 100vh;
 	padding: 0;
 	margin: 0;
-	font-family: sans-serif;
+	font-family: 'Archer A', 'Archer B'; font-weight: 400; font-style: normal;
+	background-color: $light;
 }
 body {
-	//background-image: url('../img/lamppost4.jpg');
-	//background-size: cover;
-	//background-position: center center;
+	background-image: url('../img/lamppost.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+div.share {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	padding: 10px 5px;
+	a, a:visited {
+		padding: 0 10px;
+		color: $color;
+	}
+	a:hover {
+		color: $color-alt;
+	}
 }
 
 section article {
@@ -31,26 +47,43 @@ section article {
 		display: table-cell;
 		vertical-align: middle;
 		position: relative;
+		h1 {
+			max-width: 750px;
+			margin: 25px auto 0;
+			font-size: 4em;
+			font-family: 'Archer A', 'Archer B'; font-weight: 800; font-style: normal;
+			color: $dark;
+			text-align: center;
+		}
+		h2 {
+			max-width: 750px;
+			margin: 25px auto 0;
+			font-size: 1.6em;
+			font-family: 'Gotham A', 'Gotham B'; font-weight: 700; font-style: italic;
+			color: $dark;
+			text-align: center;
+		}
 		div.group {
 			//box-shadow: 2px 2px 12px $dark;
-			max-width: 500px;
-			margin: 0 auto;
+			max-width: 400px;
+			margin: 0 auto 0;
 			position: relative;
-			h1 {
-				margin: 0;
-				padding: 25px 100px 0px 10px;
-				border-top: 5px solid $dark;
-				background-color: #ccc;
-				font-size: 2em;
+			span.batch {
+				display: block;
+				position: absolute;
+				bottom: 50px;
+				right: 25px;
+				width: 75px;
+				height: 75px;
+				line-height: 75px;
+				text-align: center;
+				border-radius: 50%;
+				border: 5px solid;
 				font-weight: bold;
-				color: $dark;
-			}
-			h2 {
-				padding: 10px 50px 25px 10px;
-				margin: 0;
-				background-color: #ccc;
-				font-size: 1em;
-				color: $dark;
+				font-size: 3em;
+				-ms-transform: rotate(3deg);
+					-webkit-transform: rotate(3deg);
+					transform: rotate(3deg);
 			}
 			div.item {
 				width: 100%;
@@ -66,7 +99,7 @@ section article {
 			text-align: center;
 			margin-top: 50px;
 			span {
-				font-weight: bold;
+				font-weight: 800;
 			}
 			a {
 				display: inline-block;
