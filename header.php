@@ -9,6 +9,11 @@
     $pol[0] = rand(0,count($pol_arr)-1);
     $pol[1] = rand(0,count($pol_arr)-1);
     $pol[2] = rand(0,count($pol_arr)-1);
+		$pol[3] = rand(0,count($pol_citat[0])-1);
+		$pol[4] = rand(0,count($pol_citat[1])-1);
+		$pol[5] = rand(0,count($pol_citat[2])-1);
+		$pol[6] = rand(0,count($pol_color2)-1);
+		$pol[7] = rand(0,count($pol_color)-1);
   endif;
   if( !isset($pol[0]) ) {
     $pol[0] = rand(0,count($pol_arr)-1);
@@ -19,33 +24,34 @@
   if( !isset($pol[2]) ) {
     $pol[2] = rand(0,count($pol_arr)-1);
   }
-
-	if( isset($_GET['q']) ) :
-    $q = explode(',',$_GET['q']);
-  else :
-    $q[0] = rand(0,count($pol_citat[0])-1);
-    $q[1] = rand(0,count($pol_citat[1])-1);
-    $q[2] = rand(0,count($pol_citat[2])-1);
-  endif;
-  if( !isset($q[0]) ) {
-    $q[0] = rand(0,count($pol_citat[0])-1);
+  if( !isset($pol[3]) ) {
+    $pol[3] = rand(0,count($pol_citat[0])-1);
   }
-  if( !isset($q[1]) ) {
-    $q[1] = rand(0,count($pol_citat[1])-1);
+  if( !isset($pol[4]) ) {
+    $pol[4] = rand(0,count($pol_citat[1])-1);
   }
-  if( !isset($q[2]) ) {
-    $q[2] = rand(0,count($pol_citat[2])-1);
+  if( !isset($pol[5]) ) {
+    $pol[5] = rand(0,count($pol_citat[2])-1);
+  }
+	if( !isset($pol[6]) ) {
+    $pol[6] = rand(0,count($pol_color2)-1);
+  }
+  if( !isset($pol[7]) ) {
+    $pol[7] = rand(0,count($pol_color2)-1);
   }
 	
 	$name = $pol_arr[$pol[0]]['first'] . ' ' . $pol_arr[$pol[1]]['last'] . ' ' . $pol_arr[$pol[2]]['last'];
-	if( isset($_GET['pol']) && isset($_GET['q']) ) { 
-		$url = 'http://dkpol15.dk/?pol='.$_GET['pol'].'&q='.$_GET['q']; 
+	if( isset($pol) ) { 
+		$url = 'http://stromdev.cloudapp.net/dkpol15/?pol='.$_GET['pol']; 
 	} else {
-		$url = 'http://dkpol15.dk/';
+		$url = 'http://stromdev.cloudapp.net/dkpol15/';
 	}
-	$message = 'Jeg vil ' . $pol_citat[0][$q[0]] . ' med ' . $pol_citat[1][$q[1]] . ' der sikrer ' . $pol_citat[2][$q[2]];
+	$message = 'Jeg vil ' . $pol_citat[0][$pol[3]] . ' med ' . $pol_citat[1][$pol[4]] . ' der sikrer ' . $pol_citat[2][$pol[5]];
 	$facebook_app_id = '1581814212082387';
-	$img = '';
+	$img = 'http://stromdev.cloudapp.net/dkpol15/assets/img/pol_test.jpg';
+	$color = $pol_color2[$pol[6]];
+	$color_hover = $pol_color2[$pol[7]];
+	if($pol[6] == 8) { $color_alt = '#141213'; } else { $color_alt = '#f5f5f5'; }
 ?>
 <!DOCTYPE html>
 <html lang="da">
@@ -58,15 +64,41 @@
     <meta property="og:site_name" content="dkpol15"/>
     <meta property="og:url" content="<?php echo $url; ?>" />
     <meta property="og:description" content="<?php echo $message; ?>" />
+    <meta property="og:image" content="<?php echo $img; ?>" />
     <meta property="fb:app_id" content="<?php echo $facebook_app_id; ?>" />
-    <meta property="article:author" content="https://www.stromworks.com" />
-		<meta property="article:publisher" content="https://www.stromworks.com" />
-    
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="http://www.stromworks.com" />
+		<meta property="article:publisher" content="http://www.stromworks.com" />
+   
+   	<meta name="twitter:card" content="photo" />
+		<meta name="twitter:site" content="@erik_hermansen" />
+		<meta name="twitter:title" content="<?php echo $name; ?>" />
+		<meta name="twitter:image" content="<?php echo $img; ?>" />
+		<meta name="twitter:url" content="http://stromdev.cloudapp.net/dkpol15/" />
+
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>#dkpol15</title>
+    <title>dkpol15.dk</title>
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6964272/754368/css/fonts.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/main.css" />
+    
+    <style>
+			div.share a {
+				color: <?php echo $color; ?>;
+			}
+			div.share a:hover {
+				color: <?php echo $color_hover; ?>;
+			}
+			div.action a {
+				color: <?php echo $color_alt; ?>;
+				background-color: <?php echo $color; ?>;
+			}
+			div.action a:hover {
+				background-color: <?php echo $color_hover; ?>;
+			}
+		</style>
+    
+    <link rel="icon" type="image/png" href="favicon.png" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
