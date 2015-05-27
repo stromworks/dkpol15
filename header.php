@@ -42,13 +42,14 @@
 	
 	$name = $pol_arr[$pol[0]]['first'] . ' ' . $pol_arr[$pol[1]]['last'] . ' ' . $pol_arr[$pol[2]]['last'];
 	if( isset($pol) ) { 
-		$url = 'http://stromdev.cloudapp.net/dkpol15/?pol='.$_GET['pol']; 
+		$url = 'http://' . $_SERVER['HTTP_HOST'] . '/dkpol15/?pol='.$_GET['pol']; 
 	} else {
-		$url = 'http://stromdev.cloudapp.net/dkpol15/';
+		$url = 'http://' . $_SERVER['HTTP_HOST'] . '/dkpol15/';
 	}
-	$message = 'Jeg vil ' . $pol_citat[0][$pol[3]] . ' med ' . $pol_citat[1][$pol[4]] . ' der sikrer ' . $pol_citat[2][$pol[5]];
+	$message = 'Jeg vil ' . $pol_citat[0][$pol[3]] . ' med ' . $pol_citat[1][$pol[4]] . ', der sikrer' . $pol_citat[2][$pol[5]];
 	$facebook_app_id = '1581814212082387';
-	$img = 'http://stromdev.cloudapp.net/dkpol15/assets/img/pol_test.jpg';
+	$img_IDs = array(sprintf("%02d", $pol[0]),sprintf("%02d", $pol[1]),sprintf("%02d", $pol[2]));
+	$img = 'http://' . $_SERVER['HTTP_HOST'] . '/dkpol15/assets/img/share/'. $img_IDs[0] .'_'. $img_IDs[1] .'_'. $img_IDs[2] .'.jpg';
 	$color = $pol_color2[$pol[6]];
 	$color_hover = $pol_color2[$pol[7]];
 	if($pol[6] == 8) { $color_alt = '#141213'; } else { $color_alt = '#f5f5f5'; }
@@ -56,6 +57,20 @@
 <!DOCTYPE html>
 <html lang="da">
   <head>
+   
+   	
+<!--
+                               POWERED BY                                         			
+
+████          ████████            ████▄           ▄██████▄           ███'    ███				
+g ╘.          ''▐▓▓-''             '▐▓▓─         '▓▓└ g▓▓▓█          ▓▓▓▓▄  █▓▓▓				
+▓▓▓█▄           ▐▓▓               ██▓▓▀              █▀  ▓▓─         ▓▓▓▓▓▄▓▓▐▓▓				
+;;▓▓▓           ▐▓▓               ╙╘▓▓▄                ▄█▓▓          ▓▓▓ ▓▓▓'▐▓▓				
+▓▓▓▀`           ▐▓▓                 "▓▓=                ▀╛           ▓▓▌  "  ▐▓▓				
+
+                             STROMWORKS.COM				 																																																
+-->
+   
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,10 +86,9 @@
 		<meta property="article:publisher" content="http://www.stromworks.com" />
    
    	<meta name="twitter:card" content="photo" />
-		<meta name="twitter:site" content="@erik_hermansen" />
+		<meta name="twitter:site" content="@stromworks" />
 		<meta name="twitter:title" content="<?php echo $name; ?>" />
 		<meta name="twitter:image" content="<?php echo $img; ?>" />
-		<meta name="twitter:url" content="http://stromdev.cloudapp.net/dkpol15/" />
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>dkpol15.dk</title>
