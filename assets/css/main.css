@@ -35,7 +35,7 @@ body {
   background-repeat: repeat-y;
   background-position: 0% 0%;
 }
-@media only screen and (min-width: 321px) and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
   /* line 44, ../sass/main.scss */
   body {
     background-image: url("../img/lamppost_center.jpg");
@@ -62,7 +62,7 @@ section article {
   padding: 0;
   display: table;
 }
-@media only screen and (min-width: 321px) and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
   /* line 60, ../sass/main.scss */
   section article {
     width: 100vw;
@@ -110,7 +110,7 @@ section aside {
   float: left;
   display: table;
 }
-@media only screen and (min-width: 321px) and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
   /* line 95, ../sass/main.scss */
   section aside {
     width: 100%;
@@ -142,7 +142,7 @@ section aside div.inner div.group {
   margin: 0 auto 0;
   position: relative;
 }
-@media only screen and (min-width: 321px) and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
   /* line 122, ../sass/main.scss */
   section aside div.heading {
     color: #f5f5f5;
@@ -159,7 +159,7 @@ section aside div.heading h1 {
   margin: 0;
   padding: 0;
 }
-@media only screen and (min-width: 321px) and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
   /* line 129, ../sass/main.scss */
   section aside div.heading h1 {
     font-size: 2em;
@@ -175,7 +175,7 @@ section aside div.heading h1 {
 section aside div.heading h2 {
   padding: 0;
 }
-@media only screen and (min-width: 321px) and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
   /* line 139, ../sass/main.scss */
   section aside div.heading h2 {
     margin: 5px 0 0;
@@ -216,7 +216,7 @@ section aside div.share {
 section aside div.share a, section aside div.share a:visited {
   padding: 0 10px;
 }
-@media only screen and (min-width: 321px) and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
   /* line 171, ../sass/main.scss */
   section aside div.share a, section aside div.share a:visited {
     font-size: 1em;
@@ -253,4 +253,57 @@ section aside div.action a {
 /* line 204, ../sass/main.scss */
 section aside div.action a:hover {
   color: #f5f5f5;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  /* line 214, ../sass/main.scss */
+  section aside {
+    padding: 5px 15px;
+  }
+
+  /* line 217, ../sass/main.scss */
+  section aside div.heading h1 {
+    font-size: 1.8em !important;
+  }
+
+  /* line 220, ../sass/main.scss */
+  section aside div.heading h2 {
+    font-size: .9em !important;
+  }
+
+  /* line 223, ../sass/main.scss */
+  section aside div.share {
+    padding: 5px 0px !important;
+  }
+
+  /* line 226, ../sass/main.scss */
+  section aside div.share a, a:visited {
+    padding: 0 5px !important;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 233, ../sass/main.scss */
+  section aside {
+    padding: 3px 10px;
+  }
+
+  /* line 236, ../sass/main.scss */
+  section aside div.heading h1 {
+    font-size: 1.6em !important;
+  }
+
+  /* line 239, ../sass/main.scss */
+  section aside div.heading h2 {
+    font-size: .8em !important;
+  }
+
+  /* line 242, ../sass/main.scss */
+  section aside div.share {
+    padding: 5px 0px !important;
+  }
+
+  /* line 245, ../sass/main.scss */
+  section aside div.share a, a:visited {
+    padding: 0 5px !important;
+  }
 }

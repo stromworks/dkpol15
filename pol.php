@@ -191,7 +191,7 @@ $pol_arr = [
 		'parti' => 'S'
 	],
 	'38' => [
-		'first' => 'Özlem Sara',
+		'first' => 'Özlem',
 		'last' => 'Cekic',
 		'parti' => 'SF'
 	],

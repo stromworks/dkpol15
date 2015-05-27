@@ -13,7 +13,7 @@ $break-large: 1024px;
     @media only screen and (max-width: $break-small) { @content; }
   }
   @else if $media == medium-screens {
-    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+    @media only screen and (max-width: $break-large - 1) { @content; }
   }
   @else if $media == wide-screens {
     @media only screen and (min-width: $break-large) { @content; }
@@ -206,5 +206,44 @@ section aside {
 			//background-color: $color-alt;
 		}
 	}
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+    section aside {
+        padding: 5px 15px;
+    }
+    section aside div.heading h1 {
+        font-size: 1.8em !important;
+    }
+    section aside div.heading h2 {
+        font-size: .9em !important;
+    }
+    section aside div.share {
+		padding: 5px 0px !important;
+    }
+    section aside div.share a, a:visited {
+		padding: 0 5px !important;
+    }
+}
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    section aside {
+        padding: 3px 10px;
+    }
+    section aside div.heading h1 {
+        font-size: 1.6em !important;
+    }
+    section aside div.heading h2 {
+        font-size: .8em !important;
+    }
+    section aside div.share {
+		padding: 5px 0px !important;
+    }
+    section aside div.share a, a:visited {
+		padding: 0 5px !important;
+    }
 }
 	
