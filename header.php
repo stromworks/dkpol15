@@ -54,7 +54,7 @@
 	$message = 'Jeg vil ' . $pol_citat[0][$pol[3]] . ' med ' . $pol_citat[1][$pol[4]] . ', der sikrer' . $pol_citat[2][$pol[5]];
 	$facebook_app_id = '1581814212082387';
 	$img_IDs = array(sprintf("%02d", $pol[0]),sprintf("%02d", $pol[1]),sprintf("%02d", $pol[2]));
-	$img = 'http://' . $_SERVER['HTTP_HOST'] . '/assets/img/share/'. $img_IDs[0] .'_'. $img_IDs[1] .'_'. $img_IDs[2] .'.jpg';
+	$img = 'http://' . $_SERVER['HTTP_HOST'] . '/assets/img/converted/'. $img_IDs[0] .'_'. $img_IDs[1] .'_'. $img_IDs[2] .'.jpg';
 	$color = $pol_color2[$pol[6]];
 	$color_hover = $pol_color2[$pol[7]];
 	if($pol[6] == 8) { $color_alt = '#141213'; } else { $color_alt = '#f5f5f5'; }
