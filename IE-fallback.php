@@ -202,5 +202,26 @@
 </span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">###########</span><span style="color: #fefefe;">##</span><span style="color: #ffffff;">############</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">#</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">###############</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">##</span><span style="color: #fefefe;">####</span><span style="color: #ffffff;">####</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">######</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">############</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">########################</span><span style="color: #fefefe;">##</span><span style="color: #ffffff;">#####</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">######</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">#</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">#</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">##</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">###</span><span style="color: #fefefe;">#####</span><span style="color: #ffffff;">########################################</span><span style="color: #fefefe;">###</span><span style="color: #ffffff;">#</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">###</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">####</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">#</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">###</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">##</span><span style="color: #fefefe;">#####</span><span style="color: #ffffff;">#
 </span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#######</span><span style="color: #fefefe;">##</span><span style="color: #ffffff;">#####</span><span style="color: #fefefe;">##</span><span style="color: #ffffff;">##</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">######</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">#</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">#</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">#</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">#######################</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">#####</span><span style="color: #fefefe;">##</span><span style="color: #ffffff;">##</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">##########</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">###</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">######################################</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">#</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">##</span><span style="color: #fefefe;">##</span><span style="color: #ffffff;">#</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">########################################################</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">###</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">#</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">#</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">####</span><span style="color: #fefefe;">#</span><span style="color: #ffffff;">#
 </span></pre>
+		
+		<a href="http://www.google.com/chrome">
+			<img src="assets/img/browsers_chrome.png" />
+			<br>Google Chrome<br>Seneste version 43
+ 		</a>
+ 		<a href="http://www.firefox.com/">
+			<img src="assets/img/browsers_firefox.png" />
+			<br>Mozilla firefox<br>Seneste version 38
+ 		</a>
+ 		<a href="http://www.apple.com/safari/">
+			<img src="assets/img/browsers_safari.png" />
+			<br>Safari<br>Seneste version 8
+ 		</a>
+ 		<a href="http://www.opera.com/">
+			<img src="assets/img/browsers_opera.png" />
+			<br>Opera<br>Seneste version 29
+ 		</a>
+ 		<a href="http://windows.microsoft.com/ie">
+			<img src="assets/img/browsers_IE.png" />
+			<br>Internet explorer<br>Seneste version 11
+ 		</a>
   	</div>
 	<![endif]-->
