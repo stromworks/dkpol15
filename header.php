@@ -1,14 +1,13 @@
 <?php
 	header('Content-Type: text/html; charset=uft-8');
 	require_once('pol.php'); 
-require_once('random_param.php');
+	require_once('random_param.php');
 
 
-//convert random string to int with details
-$pols = paramToInt($_GET['p']);
+	//convert random string to int with details
+	$pols = paramToInt($_GET['p']);
 
   if( $pols ) :
-    //$pol = explode(',',$_GET['p']);
 		$pols = str_split($pols,2);
 		foreach($pols as $p) {
 			if(substr($p,0,1) === '0') {

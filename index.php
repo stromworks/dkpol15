@@ -41,10 +41,10 @@
 						}
 					?>
 					
-					<? 
-                        $newRandomParam = generateRandom($pol_arr) . generateRandom($pol_arr) . generateRandom($pol_arr) . generateRandom($pol_citat[0]) . generateRandom($pol_citat[1]) . generateRandom($pol_citat[2]) . generateRandom($pol_color2) . generateRandom($pol_color2); 
-                        $newRandomParam = paramToString($newRandomParam);
-                    ?>
+					<?php
+						$newRandomParam = generateRandom($pol_arr) . generateRandom($pol_arr) . generateRandom($pol_arr) . generateRandom($pol_citat[0]) . generateRandom($pol_citat[1]) . generateRandom($pol_citat[2]) . generateRandom($pol_color2) . generateRandom($pol_color2); 
+            $newRandomParam = paramToString($newRandomParam);
+          ?>
 					
 					<a href="<?php echo $newRandomParam; ?>" class="btn" title="Find ny folketingskandidat">Find en ny kandidat</a>
 				</div>

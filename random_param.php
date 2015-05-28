@@ -1,4 +1,4 @@
-<?
+<?php
 function paramToString($in, $to_num = false, $pad_up = false, $passKey = null)
 {
     $index = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
