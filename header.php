@@ -128,3 +128,4 @@ g ╘.          ''▐▓▓-''             '▐▓▓─         '▓▓└ g▓
     <![endif]-->
   </head>
   <body>
+  	<?php include('IE-fallback.php'); ?>
