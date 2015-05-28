@@ -6,7 +6,7 @@
 
 	//convert random string to int with details
 	$pols = paramToInt($_GET['p']);
-
+	var_dump($pols);
   if( $pols ) :
 		$pols = str_split($pols,2);
 		foreach($pols as $p) {
@@ -52,7 +52,8 @@
   }
 
     $shareParam = $pols[0] . $pols[1] . $pols[2] . $pols[3] . $pols[4] . $pols[5] . $pols[6] . $pols[7];
-    $shareParam = paramToString($shareParam);
+    var_dump($shareParam);
+		$shareParam = paramToString($shareParam);
 	
 	$name = $pol_arr[$pol[0]]['first'] . ' ' . $pol_arr[$pol[1]]['last'] . ' ' . $pol_arr[$pol[2]]['last'];
 	$url = 'http://' . $_SERVER['HTTP_HOST'] . '/' . $shareParam; 
