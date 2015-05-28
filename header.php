@@ -3,8 +3,17 @@
 	require_once('pol.php'); 
 ?>
 <?php
-  if( isset($_GET['pol']) ) :
-    $pol = explode(',',$_GET['pol']);
+  if( isset($_GET['p']) ) :
+    //$pol = explode(',',$_GET['p']);
+		$pols = $_GET['p'];
+		$pols = str_split($pols,2);
+		foreach($pols as $p) {
+			if(substr($p,0,1) === '0') {
+				$pol[] = substr($p,1,1);
+			} else {
+				$pol[] = $p;
+			}
+		}
   else :
     $pol[0] = rand(0,count($pol_arr)-1);
     $pol[1] = rand(0,count($pol_arr)-1);
@@ -13,7 +22,7 @@
 		$pol[4] = rand(0,count($pol_citat[1])-1);
 		$pol[5] = rand(0,count($pol_citat[2])-1);
 		$pol[6] = rand(0,count($pol_color2)-1);
-		$pol[7] = rand(0,count($pol_color)-1);
+		$pol[7] = rand(0,count($pol_color2)-1);
   endif;
   if( !isset($pol[0]) ) {
     $pol[0] = rand(0,count($pol_arr)-1);
@@ -41,11 +50,7 @@
   }
 	
 	$name = $pol_arr[$pol[0]]['first'] . ' ' . $pol_arr[$pol[1]]['last'] . ' ' . $pol_arr[$pol[2]]['last'];
-	if( isset($pol) ) { 
-		$url = 'http://' . $_SERVER['HTTP_HOST'] . '/?pol='.$_GET['pol']; 
-	} else {
-		$url = 'http://' . $_SERVER['HTTP_HOST'] . '/?pol=' . $pol[0] . ',' . $pol[1] . ',' . $pol[2] . ',' . $pol[3] . ',' . . $pol[4] . ',' . $pol[5] . ',' . $pol[6] . ',' . $pol[7] . ',';
-	}
+	$url = 'http://' . $_SERVER['HTTP_HOST'] . '/' . $pols[0] . $pols[1] . $pols[2] . $pols[3] . $pols[4] . $pols[5] . $pols[6] . $pols[7]; 
 	$message = 'Jeg vil ' . $pol_citat[0][$pol[3]] . ' med ' . $pol_citat[1][$pol[4]] . ', der sikrer' . $pol_citat[2][$pol[5]];
 	$facebook_app_id = '1581814212082387';
 	$img_IDs = array(sprintf("%02d", $pol[0]),sprintf("%02d", $pol[1]),sprintf("%02d", $pol[2]));
