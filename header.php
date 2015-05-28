@@ -44,7 +44,7 @@
 	if( isset($pol) ) { 
 		$url = 'http://' . $_SERVER['HTTP_HOST'] . '/?pol='.$_GET['pol']; 
 	} else {
-		$url = 'http://' . $_SERVER['HTTP_HOST'];
+		$url = 'http://' . $_SERVER['HTTP_HOST'] . '/?pol=' . $pol[0] . ',' . $pol[1] . ',' . $pol[2] . ',' . $pol[3] . ',' . . $pol[4] . ',' . $pol[5] . ',' . $pol[6] . ',' . $pol[7] . ',';
 	}
 	$message = 'Jeg vil ' . $pol_citat[0][$pol[3]] . ' med ' . $pol_citat[1][$pol[4]] . ', der sikrer' . $pol_citat[2][$pol[5]];
 	$facebook_app_id = '1581814212082387';
@@ -89,6 +89,7 @@ g ╘.          ''▐▓▓-''             '▐▓▓─         '▓▓└ g▓
 		<meta name="twitter:site" content="@stromworks" />
 		<meta name="twitter:title" content="<?php echo $name; ?>" />
 		<meta name="twitter:image" content="<?php echo $img; ?>" />
+    <meta name="twitter:url" content="<?php echo $url; ?>" />
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>dkpol15.dk</title>

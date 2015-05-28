@@ -51,9 +51,9 @@ $pol_arr = [
 		'parti' => 'S'
 	],
 	'10' => [
-		'first' => 'Frank',
-		'last' => 'Aaen',
-		'parti' => 'E'
+		'first' => 'Søren',
+		'last' => 'Pape Poulsen',
+		'parti' => 'K'
 	],
 	'11' => [
 		'first' => 'Holger',
@@ -176,14 +176,14 @@ $pol_arr = [
 		'parti' => 'R'
 	],
 	'35' => [
-		'first' => 'Per',
-		'last' => 'Clausen',
-		'parti' => 'E'
+		'first' => 'Peter',
+		'last' => 'Skaarup',
+		'parti' => 'DF'
 	],
 	'36' => [
-		'first' => 'Birthe',
-		'last' => 'Rønn Hornbech',
-		'parti' => 'V'
+		'first' => 'Mads',
+		'last' => 'Holger',
+		'parti' => 'K'
 	],
 	'37' => [
 		'first' => 'Pernille',
@@ -206,14 +206,14 @@ $pol_arr = [
 		'parti' => 'K'
 	],
 	'41' => [
-		'first' => 'Per Stig',
-		'last' => 'Møller',
-		'parti' => 'K'
+		'first' => 'Yahya',
+		'last' => 'Hassan',
+		'parti' => 'LOE'
 	],
 	'42' => [
-		'first' => 'Tom',
-		'last' => 'Behnke',
-		'parti' => 'K'
+		'first' => 'Morten',
+		'last' => 'Bødskov',
+		'parti' => 'S'
 	],
 	'43' => [
 		'first' => 'Thyra',
@@ -276,6 +276,7 @@ $pol_color = [
 	'E' => '#d61a44',
 	'V' => '#005392',
 	'A' => '#00ff00'
+	'LOE' => '#FFBE00'
 ];
 $pol_color2 = [
 	'0' => '#f04d46',
