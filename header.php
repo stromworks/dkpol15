@@ -1,11 +1,14 @@
 <?php
 	header('Content-Type: text/html; charset=uft-8');
 	require_once('pol.php'); 
-?>
-<?php
-  if( isset($_GET['p']) ) :
+require_once('random_param.php');
+
+
+//convert random string to int with details
+$pols = paramToInt($_GET['p']);
+
+  if( $pols ) :
     //$pol = explode(',',$_GET['p']);
-		$pols = $_GET['p'];
 		$pols = str_split($pols,2);
 		foreach($pols as $p) {
 			if(substr($p,0,1) === '0') {
@@ -48,10 +51,13 @@
   if( !isset($pol[7]) ) {
     $pol[7] = rand(0,count($pol_color2)-1);
   }
+
+    $shareParam = $pols[0] . $pols[1] . $pols[2] . $pols[3] . $pols[4] . $pols[5] . $pols[6] . $pols[7];
+    $shareParam = paramToString($shareParam);
 	
 	$name = $pol_arr[$pol[0]]['first'] . ' ' . $pol_arr[$pol[1]]['last'] . ' ' . $pol_arr[$pol[2]]['last'];
-	$url = 'http://' . $_SERVER['HTTP_HOST'] . '/' . $pols[0] . $pols[1] . $pols[2] . $pols[3] . $pols[4] . $pols[5] . $pols[6] . $pols[7]; 
-	$message = 'Jeg vil ' . $pol_citat[0][$pol[3]] . ' med ' . $pol_citat[1][$pol[4]] . ', der sikrer' . $pol_citat[2][$pol[5]];
+	$url = 'http://' . $_SERVER['HTTP_HOST'] . '/' . $shareParam; 
+	$message = 'Jeg vil ' . $pol_citat[0][$pol[3]] . ' med ' . $pol_citat[1][$pol[4]] . ', der sikrer' . $pol_citat[2][$pol[5]].'.';
 	$facebook_app_id = '1581814212082387';
 	$img_IDs = array(sprintf("%02d", $pol[0]),sprintf("%02d", $pol[1]),sprintf("%02d", $pol[2]));
 	$img = 'http://' . $_SERVER['HTTP_HOST'] . '/assets/img/converted/'. $img_IDs[0] .'_'. $img_IDs[1] .'_'. $img_IDs[2] .'.jpg';
